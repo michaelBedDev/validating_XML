@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE parent [
+<!ELEMENT parent (son*,daughter+)>
+<!ELEMENT son (#PCDATA)>
+<!ELEMENT daughter (#PCDATA)>
+]>
+<parent>
+    <son>Ricardo</son>
+    <daughter>Nerea</daughter>
+    <daughter>Teresa</daughter>
+    <daughter>Kayla</daughter>
+</parent>
