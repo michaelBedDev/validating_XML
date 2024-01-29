@@ -1,0 +1,3 @@
+<!ELEMENT parent (son*,daughter+)>
+<!ELEMENT son (#PCDATA)>
+<!ELEMENT daughter (#PCDATA)>

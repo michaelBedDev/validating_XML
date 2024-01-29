@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE parent SYSTEM "parent2.dtd">
+<parent>
+    <son>Ricardo</son>
+    <son>Richi</son>
+    <daughter>Nerea</daughter>
+    <daughter>Teresa</daughter>
+    <daughter>Kayla</daughter>
+</parent>

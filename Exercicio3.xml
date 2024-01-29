@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE message SYSTEM "email.dtd">
+
+<message>
+    <from>test@micamadev.com</from>
+    <to>micama2000@gmail.com</to>
+    <subject>Test de prueba</subject>
+    <body>Esto es un email de prueba</body>
+
+</message>
