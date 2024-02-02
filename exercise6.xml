@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE booklist [
+    <!ELEMENT booklist (book)+>
+    <!ELEMENT book (bookname*,author+,price?,homepage)>
+    <!ELEMENT bookname (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT homepage (#PCDATA)>
+]>
+<booklist>
+    <book>
+        <bookname>Alicia en el País de las Maravillas</bookname>
+        <author>Lewis Caroll</author>
+        <price>20,99</price>
+        <homepage>Casa del Libro</homepage>
+    </book>
+    <book>
+        <bookname>La novia gitana</bookname>
+        <author>Carmen Mola1</author>
+        <author>Carmen Mola2</author>
+        <homepage>El Corte Inglés</homepage>
+    </book>
+</booklist>
