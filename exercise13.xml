@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE bookDatabase SYSTEM "bookDatabase.dtd">
+
+<bookDatabase>
+    <book bookID="ISBN-0-13-xxx">
+        <author>&Eliotte;</author>
+        <content>
+            <chapter number="a1">XML Structure, Syntax</chapter>
+            <description>
+                <section>XML Fundamentals</section>
+            </description>
+        </content>
+        <content>
+            <chapter number="a2">Document Type Definitions</chapter>
+            <description>
+                <section>Element Declarations</section>
+                <section>Attributes Declarations</section>
+                <summary>summary of the chapter 2</summary>
+            </description>
+        </content>
+    </book>
+    <book bookID="ISBN-0-586-xxx">
+        <author>&Ian;</author>
+        <author>&Carl;</author>
+        <image>grid architecture</image>
+        <content>
+            <chapter number="a1">Grids in Context</chapter>
+            <description />
+        </content>
+        <newchapters>
+            <chapter number="a20">Network structure</chapter>
+            <description>
+                <section>The Future(1998-2005)</section>
+            </description>
+        </newchapters>
+    </book>
+</bookDatabase>
