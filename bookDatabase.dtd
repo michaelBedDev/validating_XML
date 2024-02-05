@@ -1,0 +1,16 @@
+    <!ELEMENT bookDatabase (book+)>
+    <!ELEMENT book (author+,image?,content+,newchapters?)>
+    <!ATTLIST book bookID NMTOKEN #REQUIRED>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT image (#PCDATA)>
+    <!ENTITY % content "chapter,description">
+    <!ELEMENT content (%content;)>
+    <!ELEMENT chapter (#PCDATA)>
+    <!ATTLIST chapter number NMTOKEN #REQUIRED>
+    <!ELEMENT description (section*,summary?)>
+    <!ELEMENT section (#PCDATA)>
+    <!ELEMENT summary (#PCDATA)>
+    <!ELEMENT newchapters (%content;)>
+    <!ENTITY Ian "Ian Foster">
+    <!ENTITY Carl "Carl Kesselman">
+    <!ENTITY Eliotte "Elliotte Rusty Harold">
