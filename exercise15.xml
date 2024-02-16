@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE order [
+    <!ELEMENT order (tractor+)>
+    <!ELEMENT tractor (component+)>
+    <!ATTLIST component manufacture-name ID #REQUIRED>
+    <!ELEMENT component (delivery-date?,fragile?,weight)>
+    <!ELEMENT delivery-date EMPTY>
+    <!ATTLIST delivery-date year NMTOKEN #REQUIRED>
+    <!ATTLIST delivery-date month NMTOKEN #REQUIRED>
+    <!ATTLIST delivery-date day NMTOKEN #IMPLIED>
+    <!ELEMENT fragile EMPTY>
+    <!ELEMENT weight (serial-number, maximum-km?)>
+    <!ATTLIST weight weight-unit NMTOKEN #REQUIRED>
+    <!ELEMENT serial-number (#PCDATA)>
+    <!ELEMENT maximum-km (#PCDATA)>
+]>
+<order>
+    <tractor>
+        <component manufacture-name="a1">
+
+            <weight weight-unit="kilos">
+                <serial-number>00001</serial-number>
+                <maximum-km>300000</maximum-km>
+            </weight>
+        </component>
+        <component manufacture-name="a2" >
+            <delivery-date year="2024" month="2" />
+            <fragile />
+            <weight weight-unit="kilos">
+                <serial-number>00002</serial-number>
+                <maximum-km>350000</maximum-km>
+            </weight>
+        </component>
+    </tractor>
+</order>

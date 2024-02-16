@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE artists[
+    <!ELEMENT artists (artist+,album)>
+    <!ELEMENT artist EMPTY>
+    <!ATTLIST artist name CDATA #REQUIRED>
+    <!ATTLIST artist artistID ID #REQUIRED>
+    <!ELEMENT album EMPTY>
+    <!ATTLIST album name CDATA #REQUIRED>
+    <!ATTLIST album albumArtistID IDREF #IMPLIED>
+    <!ATTLIST album contributingArtistIDs IDREFS #IMPLIED>
+]>
+
+<artists>
+    <artist name="J Balvin" artistID="a1" />
+    <artist name="Kanye West" artistID="a2" />
+    <artist name="Travis Scott" artistID="a3" />
+    <album name="Colores" albumArtistID="a1" contributingArtistIDs="a2 a3"/>
+</artists>
