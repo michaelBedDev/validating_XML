@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE match [
+    <!ELEMENT match (team+)>
+    <!ELEMENT team (goal*,player*)>
+    <!ATTLIST team name ID #REQUIRED>
+    <!ATTLIST team field NMTOKEN #REQUIRED>
+    <!ELEMENT goal (player?)>
+    <!ATTLIST goal time NMTOKEN #REQUIRED>
+    <!ATTLIST goal penalty NMTOKEN #IMPLIED>
+    <!ELEMENT player (scored?,yellowcard?,redcard?)>
+    <!ATTLIST player name ID #REQUIRED>
+    <!ELEMENT yellowcard EMPTY>
+    <!ELEMENT scored EMPTY>
+    <!ATTLIST scored number NMTOKEN #REQUIRED>
+    <!ELEMENT redcard EMPTY>
+
+
+]>
+
+<match>
+    <team name="AC-Milan" field="local">
+        <goal time="30:00" penalty="yes">
+            <player name="A.Pirlo">
+                <scored number="1" />
+                <yellowcard />
+            </player>
+        </goal>
+        <player name="Zlatan.Ibrahimoviç">
+            <redcard />
+        </player>
+    </team>
+    <team name="Liverpool" field="visitor">
+        <goal time="35:00">
+            <player name="Steven.Gerard">
+                <scored number="1" />
+            </player>
+        </goal>
+        <goal time="82:00">
+            <player name="aa">
+                <scored number="1" />
+                <yellowcard />
+            </player>
+        </goal>
+    </team>
+</match>
