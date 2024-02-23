@@ -1,0 +1,27 @@
+<purchaseOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="purchaseOrder.xsd">
+    <shipTo country="US">
+        <name>John Doe</name>
+        <street>Fake Ave 123</street>
+        <city>Dallas</city>
+        <state>Texas</state>
+        <zip>15000</zip>
+    </shipTo>
+    <billTo country="US">
+        <name>John Doe</name>
+        <street>Fake Ave 123</street>
+        <city>Dallas</city>
+        <state>Texas</state>
+        <zip>15000</zip>
+    </billTo>
+    <comment>a</comment>
+    <items>
+        <item partNum="123-AB">
+            <productName>TestItem</productName>
+            <quantity>1</quantity>
+            <USPrice>1.99</USPrice>
+            <comment>This is a checkout test</comment>
+            <shipDate>2024-02-23</shipDate>
+        </item>
+    </items>
+</purchaseOrder>
