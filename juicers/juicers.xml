@@ -1,0 +1,13 @@
+
+<juicers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="juicers.xsd">
+    <juicer>
+        <name></name>
+        <image></image>
+        <description></description>
+        <warranty></warranty>
+        <weight>88</weight>
+        <cost>11.99</cost>
+        <retailer></retailer>
+    </juicer>
+</juicers>
