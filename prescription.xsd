@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="prescription">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="physician">
+                    <xs:complexType mixed="true">
+                        <xs:sequence>
+                            <xs:element name="physicianName" type="xs:string" />
+                            <xs:element name="organization" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="physicianID" type="xs:integer" use="required" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="date" type="xs:string" />
+                <xs:element name="brandName" type="xs:string" />
+                <xs:element name="strength">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:integer">
+                                <xs:attribute name="units" use="required" type="xs:string"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="packageSize" type="xs:string" />
+                <xs:element name="dosageInstruction" type="xs:string" />
+                <xs:element name="use" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="prescriptionID" use="required" />
+            <xs:attribute name="patienName" use="required" />
+            <xs:attribute name="patientID" type="xs:integer" use="required" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

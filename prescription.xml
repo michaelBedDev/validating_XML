@@ -1,0 +1,14 @@
+<prescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="prescription.xsd" prescriptionID="pr12345" patienName="Carmen Rubio" patientID="121212">
+    <physician physicianID="232323">
+        Important info
+        <physicianName>Hugo Láncara</physicianName>
+        <organization> University Hospital </organization>
+    </physician>
+    <date>2022-09-12</date>
+    <brandName> Diovan </brandName>
+    <strength units="mg"> 5 </strength>
+    <packageSize> 20 </packageSize>
+    <dosageInstruction>One tablet a day </dosageInstruction>
+    <use> For high blood pressure </use>
+</prescription>
