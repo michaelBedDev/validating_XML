@@ -10,8 +10,7 @@
                                 <xs:complexType mixed="true">
                                     <xs:sequence>
                                         <xs:element name="url" type="xs:string" />
-                                        <xs:element name="views" type="viewType">
-                                        </xs:element>
+                                        <xs:element name="views" type="viewType"/>
                                         <xs:element name="comments">
                                             <xs:complexType>
                                                 <xs:sequence>
@@ -44,7 +43,7 @@
                                                                             use="required">
                                                                             <xs:simpleType>
                                                                                 <xs:restriction
-                                                                                    base="xs:positiveInteger">
+                                                                                    base="xs:gYear">
                                                                                     <xs:minInclusive
                                                                                         value="2020"></xs:minInclusive>
                                                                                     <xs:maxInclusive
@@ -72,9 +71,7 @@
                                                                                 name="server">
                                                                                 <xs:complexType>
                                                                                     <xs:choice>
-                                                                                        <xs:element
-                                                                                            name="gmail"
-                                                                                            type="xs:string" />
+                                                                                        <xs:element name="gmail"/>
                                                                                         <xs:element
                                                                                             name="hotmail"
                                                                                             type="xs:string" />
