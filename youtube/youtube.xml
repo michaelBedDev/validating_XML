@@ -3,7 +3,10 @@
     <videos>
         <video> XSD Overview <url>https://www.youtube.com/watch?v=PpvX3izvRWU</url>
             <views>112000</views>
-            <comments good="" bad=""/> <!--alterado-->
+            <comments>
+                <good>1200</good>
+                <bad>700</bad>
+            </comments>
             <subscribers>
                 <subscriber code="15-[AR]-56">
                     <subscriptionDate day="12" month="february" year="2023"/>
