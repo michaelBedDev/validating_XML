@@ -3,12 +3,12 @@ Un elemento está vacío si no tieme otros elementos entro. Puede tener un tipo 
 
 Todos los elementos tienen un nombre y un tipo
 
-Elemento mixto: tiene elementos y texto dentro. 
+Elemento mixto: tiene elementos y texto dentro. (o atributos? otros elementos y atributos?) 
 element -> type -> mixed:"true"
 
 Listas y enumerados van dentro de un elemento con un tipo simple.
 
-element -> simpleType -> list
+element -> simpleType -> list     LAS LISTAS PUEDEN TENER TYPE (y union)
 element -> simpleType -> restriction -> enum
 
 Para que un elemento sólo pueda tener dentro otros elementos selecionados, se usa un choice
@@ -30,3 +30,10 @@ PUEDES HACER UNA RESTRICCION TANTO DE ELEMENTOS COMO DE ATRIBUTOS
 
 
 EXTENSION,SEQUENCES
+
+
+Los elementos de las secuencias tienen que aparecer en orden
+
+Fixed value: 
+atribute (dentro) fixed=""
+Fechas: 2023-03-02
