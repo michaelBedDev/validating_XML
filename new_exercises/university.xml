@@ -1,9 +1,18 @@
-<university>
-    <school id="" location="">
-        <staff id="">
+<university xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="university.xsd">
+    <school id="school1" location="masachussets">
+        <staff id="staff1">
             <name></name>
             <title></title>
-            <category></category>
+            <category>
+                <academic/>
+            </category>
+            <address>
+                <street></street>
+                <suburb></suburb>
+                <postcode></postcode>
+            </address>
+
             <address>
                 <street></street>
                 <suburb></suburb>
@@ -12,9 +21,9 @@
         </staff>
     </school>
 
-    <subject code="">
-    <name></name>
-    <description></description>
-    <capacity></capacity>
+    <subject code="subject1">
+        <name></name>
+        <description></description>
+        <capacity>100</capacity>
     </subject>
 </university>
