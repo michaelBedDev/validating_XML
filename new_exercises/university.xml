@@ -1,0 +1,20 @@
+<university>
+    <school id="" location="">
+        <staff id="">
+            <name></name>
+            <title></title>
+            <category></category>
+            <address>
+                <street></street>
+                <suburb></suburb>
+                <postcode></postcode>
+            </address>
+        </staff>
+    </school>
+
+    <subject code="">
+    <name></name>
+    <description></description>
+    <capacity></capacity>
+    </subject>
+</university>
