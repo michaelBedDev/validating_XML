@@ -72,9 +72,7 @@
                                                                                 <xs:complexType>
                                                                                     <xs:choice>
                                                                                         <xs:element name="gmail"/>
-                                                                                        <xs:element
-                                                                                            name="hotmail"
-                                                                                            type="xs:string" />
+                                                                                        <xs:element name="hotmail" />
                                                                                         <xs:element
                                                                                             name="iessanclemente.net"
                                                                                             type="xs:string" />
