@@ -37,3 +37,19 @@ Los elementos de las secuencias tienen que aparecer en orden
 Fixed value: 
 atribute (dentro) fixed=""
 Fechas: 2023-03-02
+
+
+Revisar simplecontent text only
+Revisar empty elements
+
+XSD
+
+Elementos y atributos
+Tipos: xs:gYear, xs:date, positiveInteger, etc
+
+Generar tipos. Simples y complejos
+
+Mixed con atributo
+element -> tipo ->simpleContent ->extension base (texto)->atributo (tipo atributo)
+Mixed con elemento
+element -> complexType mixed="true"-> element 

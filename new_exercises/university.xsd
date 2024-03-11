@@ -3,27 +3,25 @@
     <xs:element name="university">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="school">
-                    <xs:complexType>
+                <xs:element name="school" >
+                    <xs:complexType >
                         <xs:sequence>
-                            <xs:element name="staff" type="staffType"/>
+                            <xs:element name="employee" type="staffType"/>
                         </xs:sequence>
-                        <xs:attribute name="id" use="required" type="xs:ID"/>
+                        <xs:attribute name="idSchool" use="required" type="xs:ID"/>
                         <xs:attribute name="location" use="required" />
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="subject" type="subjectType">
-
-                </xs:element>
+                <xs:element name="subject" type="subjectType"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
 
     <xs:complexType name="staffType">
         <xs:sequence>
-            <xs:element name="name" />
+            <xs:element name="name" type="xs:string"/>
             <xs:element name="title" /> <!--must be blank-->
-            <xs:element name="category" >
+            <xs:element name="category">
                 <xs:complexType>
                     <xs:choice>
                         <xs:element name="academic" type="xs:string"/>
@@ -34,7 +32,7 @@
             </xs:element>
             <xs:element name="address" type="addressType" maxOccurs="unbounded"/>
         </xs:sequence>
-        <xs:attribute name="id" use="required" type="xs:ID"/>
+        <xs:attribute name="idEmployee" use="required" type="xs:ID"/>
     </xs:complexType>
 
     <xs:complexType name="subjectType">
@@ -44,6 +42,7 @@
             <xs:element name="capacity" />
         </xs:sequence>
         <xs:attribute name="code" use="required" type="xs:ID"/>
+        <xs:attribute name="idprof" type="xs:IDREF"/>
     </xs:complexType>
 
     <xs:complexType name="addressType">
